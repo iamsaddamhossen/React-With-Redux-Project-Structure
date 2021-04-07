@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+//import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+//////////////////////////AUTH COMPONENT CALL////////////////////////////////
+//import { Login, Register, ResetPassword } from "./containers";
+/////////////////////////END OF AUTH COMPONENT//////////////////////////////
+//import BaseLayout from "./components/BaseLayout";
+
+//////////////////////////MASTER COMPONENT CALL////////////////////////////////
+// import {
+//   Home,
+//   CreateHomePageSlider,
+// } from "./containers";
+////////////////////////END OF MASTER COMPONENT CALL////////////////////////////
+
+//////////////////////////SETTINGS COMPONENT CALL////////////////////////////////
+// import {
+//   CreateCategory,
+// } from "./containers";
+//////////////////////////END OF SETTINGS COMPONENT CALL////////////////////////////////
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <Router>
+    //   <BaseLayout>
+    //     <Switch>
+    //       <div className="App">
+    //         {/*  <Redirect to="/" /> */}
+    //         {/* <defaultLayout>
+    //           <Route path="/" exact="true" component={Login}></Route>
+    //         </defaultLayout> */}
+    //         <Route path="/Register" exact="true" component={Register}></Route>
+    //       </div>
+    //     </Switch>
+    //   </BaseLayout>
+    // </Router>
+
+    <h2 style={{textAlign:'center'}}>This is new react redux project structure</h2>
+  
   );
 }
-
 export default App;

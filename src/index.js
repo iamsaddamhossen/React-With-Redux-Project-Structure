@@ -5,10 +5,25 @@ import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
+
+/////////////Bellow library is used for react-redux implmenation//////////////////
+import { createStore, applyMiddleware } from "redux";
+import thunk from "redux-thunk"; //it's a middleware
+import logger from "redux-logger";
+import { Provider } from "react-redux";
+import rootReducer from "./redux/reducers";
+////////////////////End of Redux///////////////////////////////////
+
+/*
+Applying our middleware to the store
+*/
+
+const store = createStore(rootReducer, applyMiddleware(thunk, logger));
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
